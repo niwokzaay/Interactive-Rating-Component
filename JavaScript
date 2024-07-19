@@ -1,0 +1,74 @@
+let one = document.getElementById("one");
+let two = document.getElementById("two");
+let three = document.getElementById("three");
+let four = document.getElementById("four");
+let five = document.getElementById("five");
+let sbm = document.getElementById("submit");
+
+
+let icM = document.getElementById("iconM");
+let Qht= document.getElementById("Qhandt");
+let rate = document.getElementById("rate");
+
+let SicM = document.getElementById("SiconM");
+let Srate = document.getElementById("SrateM");
+let Rev = document.getElementById("Review");
+let pSr = document.getElementById("pSr");
+
+
+one.addEventListener("click", () => {
+    one.style.backgroundColor = "orange";
+    two.style.backgroundColor = "gray";
+    three.style.backgroundColor = "gray";
+    four.style.backgroundColor = "gray";
+    five.style.backgroundColor = "gray";
+});
+
+
+two.addEventListener("click", () => {
+    one.style.backgroundColor = "gray";
+    two.style.backgroundColor = "orange";
+    three.style.backgroundColor = "gray";
+    four.style.backgroundColor = "gray";
+    five.style.backgroundColor = "gray";
+});
+
+
+three.addEventListener("click", () => {
+    one.style.backgroundColor = "gray";
+    two.style.backgroundColor = "gray";
+    three.style.backgroundColor = "orange";
+    four.style.backgroundColor = "gray";
+    five.style.backgroundColor = "gray";
+});
+
+
+four.addEventListener("click", () => {
+    one.style.backgroundColor = "gray";
+    two.style.backgroundColor = "gray";
+    three.style.backgroundColor = "gray";
+    four.style.backgroundColor = "orange";
+    five.style.backgroundColor = "gray";
+});
+
+
+five.addEventListener("click", () => {
+    one.style.backgroundColor = "gray";
+    two.style.backgroundColor = "gray";
+    three.style.backgroundColor = "gray";
+    four.style.backgroundColor = "gray";
+    five.style.backgroundColor = "orange";
+});
+
+
+function btn() {
+    icM.style.display = "none";
+    Qht.style.display = "none";
+    rate.style.display = "none";
+    sbm.style.display = "none";
+    SicM.style.display = "block";
+    Srate.style.display = "block";
+    Rev.style.display = "block";
+    pSr.textContent = "You selected 4 out of 5"
+}
+
